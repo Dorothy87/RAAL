@@ -2,11 +2,11 @@
 
 We save our experimental data as CSV files containing physical execution plan trees, real-time resources for Spark SQL, table structures involved, and associated execution costs. The experiment runs as follows.
 
-1.	python data_processing.py
+  1.	python data_processing.py
 
 This step is the data pre-processing, including training the word vector model, processing the experimental data into npy or pkl type data.
 
-2.	python train_and_test.py
+  2.	python train_and_test.py
 
 This step is the training and testing of the RAAL model. We first use 80% of the pre-processed data for model training and then the remaining 20% for post-training model testing. The results of the runs are output directly after completion, including MSE, RE, COR, R2.
 
